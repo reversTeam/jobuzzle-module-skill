@@ -1,0 +1,51 @@
+/**************************************************************
+*     ####         #                               #          * Jobuzzle - Copyright All rights reserved
+*     ####         #                               #          *
+*       ##  #####  ######  #     # ####### ####### #  #####   * @Author: revers
+*       ## #     # #     # #     #      #       #  # #     #  *
+*       ## #     # #     # #     #     #       #   # #     #  * @Date:   2015-09-29 17:21:13
+*       ## #     # #     # #     #    #       #    # #     #  *
+*       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
+*  ####### #     # #     # #     #  #       #      # #        *
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-29 17:22:56
+**************************************************************/
+
+class SkillDataMainEntity extends ElementDataMainEntity {
+
+	public _type = 'Skill';
+	public _templateTimeline = 'skill_data_timeline_template';
+	public _templateMiniature = 'skill_data_miniature_template';
+
+	initialize : function () {
+		_super();
+
+		this['_name'] = undefined;
+	}
+
+	hydrate : function (datas) {
+		_super(datas);
+
+		if (datas['name'])
+			this.setName(datas['name']);
+	}
+
+	search : function (params) {
+		var reg = new RegExp(params, 'i');
+
+		return (
+			_super()
+			|| (this.getName() != undefined && reg.test(this.getName()))
+		);
+	}
+
+	public getName : function () {
+		return this['_name'];
+	}
+
+	public setName : function (name) {
+		this['_name'] = name;
+
+		return this;
+	}
+
+}

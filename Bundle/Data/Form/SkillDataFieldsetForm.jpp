@@ -1,0 +1,39 @@
+/**************************************************************
+*     ####         #                               #          * Jobuzzle - Copyright All rights reserved
+*     ####         #                               #          *
+*       ##  #####  ######  #     # ####### ####### #  #####   * @Author: revers
+*       ## #     # #     # #     #      #       #  # #     #  *
+*       ## #     # #     # #     #     #       #   # #     #  * @Date:   2015-09-29 17:24:25
+*       ## #     # #     # #     #    #       #    # #     #  *
+*       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
+*  ####### #     # #     # #     #  #       #      # #        *
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-29 17:38:20
+**************************************************************/
+
+class SkillDataFieldsetForm extends ElementDataFieldsetForm {
+
+	public _formName = 'Skill';
+	public _createFormName = 'skill_data_create_form';
+	public _searchFormName = 'skill_data_search_form';
+	public _editFormName = 'skill_data_edit_form';
+
+	public _nameDisplay = undefined;
+
+	public getElementsDisplay : function () {
+		var elementsDisplay = _super();
+
+		elementsDisplay['name'] = this.getNameDisplay();
+
+		return elementsDisplay;
+	}
+
+	public getNameDisplay : function () {
+		if (!this['_nameDisplay']) {
+			this['_nameDisplay'] = {};
+			this['_nameDisplay']['type'] = 'Text';
+			this['_nameDisplay']['label'] = 'form.input.skill.name';
+		}
+		return this['_nameDisplay'];
+	}
+
+}

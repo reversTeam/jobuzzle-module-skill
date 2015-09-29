@@ -1,0 +1,22 @@
+/**************************************************************
+*     ####         #                               #          * Jobuzzle - Copyright All rights reserved
+*     ####         #                               #          *
+*       ##  #####  ######  #     # ####### ####### #  #####   * @Author: revers
+*       ## #     # #     # #     #      #       #  # #     #  *
+*       ## #     # #     # #     #     #       #   # #     #  * @Date:   2015-09-29 17:39:53
+*       ## #     # #     # #     #    #       #    # #     #  *
+*       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
+*  ####### #     # #     # #     #  #       #      # #        *
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-29 19:34:26
+**************************************************************/
+
+class SkillDataTemplateMiniatureView extends ElementDataTemplateMiniatureView {
+
+	public display : function () {
+		var entity = this.state['entity'];
+		return (
+			<div>{entity.getId() +' : '+ entity.getType() +' | Name -> '+ entity.getName()}</div>
+		);
+	}
+
+}

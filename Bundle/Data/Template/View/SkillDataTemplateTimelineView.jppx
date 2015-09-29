@@ -1,0 +1,30 @@
+/**************************************************************
+*     ####         #                               #          * Jobuzzle - Copyright All rights reserved
+*     ####         #                               #          *
+*       ##  #####  ######  #     # ####### ####### #  #####   * @Author: revers
+*       ## #     # #     # #     #      #       #  # #     #  *
+*       ## #     # #     # #     #     #       #   # #     #  * @Date:   2015-09-29 17:42:33
+*       ## #     # #     # #     #    #       #    # #     #  *
+*       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
+*  ####### #     # #     # #     #  #       #      # #        *
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-29 19:38:45
+**************************************************************/
+
+class SkillDataTemplateTimelineView extends ElementDataTemplateTimelineView {
+
+	public getUrl : function () {
+		var router = serviceLocator.get('Router');
+
+		return router.build('/skill/view', {
+			skill_id : this.state['entity'].getId()
+		});
+	}
+
+	public display : function () {
+		var entity = this.state['entity'];
+		return <div onClick={this.link} data-url={this.getUrl()}>
+			{entity.getId() +' : '+ entity.getType() +' | Name -> '+ entity.getName()}
+		</div>;
+	}
+
+}
