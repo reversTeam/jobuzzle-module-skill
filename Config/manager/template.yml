@@ -1,0 +1,27 @@
+###############################################################
+#     ####         #                               #          # Jobuzzle - Copyright All rights reserved
+#     ####         #                               #          #
+#       ##  #####  ######  #     # ####### ####### #  #####   # @Author: revers
+#       ## #     # #     # #     #      #       #  # #     #  #
+#       ## #     # #     # #     #     #       #   # #     #  # @Date:   2015-09-29 16:10:58
+#       ## #     # #     # #     #    #       #    # #     #  #
+#       ## #     # #     # #     #   #       #     # ######   # @Last Modified by:   revers
+#  ####### #     # #     # #     #  #       #      # #        #
+#  ######   #####   ######  #####  ####### ####### # #######  # @Last Modified time: 2015-09-29 16:11:10
+###############################################################
+
+invokables:
+	skill_data_timeline_template : Data/Template/SkillDataTimelineTemplate
+
+	skill_data_search_template	: Data/Template/SkillDataSearchTemplate
+	skill_data_view_template	: Data/Template/SkillDataViewTemplate
+	skill_data_create_template	: Data/Template/SkillDataCreateTemplate
+	skill_data_update_template	: Data/Template/SkillDataUpdateTemplate
+	skill_data_delete_template	: Data/Template/SkillDataDeleteTemplate
+
+shared:
+	skill_data_search_template	: true
+	skill_data_view_template	: true
+	skill_data_create_template	: true
+	skill_data_update_template	: true
+	skill_data_delete_template	: true

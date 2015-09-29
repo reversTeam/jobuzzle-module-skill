@@ -1,0 +1,22 @@
+/**************************************************************
+*     ####         #                               #          * Jobuzzle - Copyright All rights reserved
+*     ####         #                               #          *
+*       ##  #####  ######  #     # ####### ####### #  #####   * @Author: revers
+*       ## #     # #     # #     #      #       #  # #     #  *
+*       ## #     # #     # #     #     #       #   # #     #  * @Date:   2015-09-29 17:38:55
+*       ## #     # #     # #     #    #       #    # #     #  *
+*       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
+*  ####### #     # #     # #     #  #       #      # #        *
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-29 17:39:29
+**************************************************************/
+
+class SkillDataTemplateDeleteView extends ElementDataTemplateDeleteView {
+
+	public _class = 'skill';
+	public _elementType = 'Skill';
+
+	public display : function () {
+		return <div>Delete Skill</div>;
+	}
+
+}

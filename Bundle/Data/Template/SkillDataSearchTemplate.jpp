@@ -1,0 +1,20 @@
+/**************************************************************
+*     ####         #                               #          * Jobuzzle - Copyright All rights reserved
+*     ####         #                               #          *
+*       ##  #####  ######  #     # ####### ####### #  #####   * @Author: revers
+*       ## #     # #     # #     #      #       #  # #     #  *
+*       ## #     # #     # #     #     #       #   # #     #  * @Date:   2015-09-29 17:32:04
+*       ## #     # #     # #     #    #       #    # #     #  *
+*       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
+*  ####### #     # #     # #     #  #       #      # #        *
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-29 17:45:16
+**************************************************************/
+
+class SkillDataSearchTemplate extends ElementDataSearchTemplate {
+
+	public _viewClassName = 'SkillDataTemplateSearchView';
+	public _serviceName = 'skill_data_main_service';
+	public _type = 'Skill';
+	public _route = 'skill';
+
+}

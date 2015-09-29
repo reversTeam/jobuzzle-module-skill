@@ -1,0 +1,20 @@
+/**************************************************************
+*     ####         #                               #          * Jobuzzle - Copyright All rights reserved
+*     ####         #                               #          *
+*       ##  #####  ######  #     # ####### ####### #  #####   * @Author: revers
+*       ## #     # #     # #     #      #       #  # #     #  *
+*       ## #     # #     # #     #     #       #   # #     #  * @Date:   2015-09-29 17:32:30
+*       ## #     # #     # #     #    #       #    # #     #  *
+*       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
+*  ####### #     # #     # #     #  #       #      # #        *
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-29 17:34:49
+**************************************************************/
+
+class SkillDataUpdateTemplate extends ElementDataUpdateTemplate {
+
+	public _viewClassName = 'SkillDataTemplateUpdateView';
+	public _serviceName = 'skill_data_main_service';
+	public _route = 'skill';
+	public _type = 'Skill';
+
+}

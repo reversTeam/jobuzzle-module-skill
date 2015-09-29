@@ -1,0 +1,26 @@
+/**************************************************************
+*     ####         #                               #          * Jobuzzle - Copyright All rights reserved
+*     ####         #                               #          *
+*       ##  #####  ######  #     # ####### ####### #  #####   * @Author: revers
+*       ## #     # #     # #     #      #       #  # #     #  *
+*       ## #     # #     # #     #     #       #   # #     #  * @Date:   2015-09-29 17:28:08
+*       ## #     # #     # #     #    #       #    # #     #  *
+*       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
+*  ####### #     # #     # #     #  #       #      # #        *
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-29 17:28:27
+**************************************************************/
+
+class SkillDataMainService extends ElementDataMainService {
+
+	_type = 'skill';
+	_title = 'Skills';
+	_entityType = 'Skill';
+	_fieldsetName = 'skill_data_fieldset_form';
+
+	getTitleParamsView : function (entity) {
+		if (entity)
+			return { url : entity.getName() };
+		return { url : '' };
+	}
+
+}
