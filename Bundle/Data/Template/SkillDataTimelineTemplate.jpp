@@ -7,11 +7,12 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-29 17:34:30
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-10-04 02:19:44
 **************************************************************/
 
 class SkillDataTimelineTemplate extends ElementDataTimelineTemplate {
 
 	public _viewClassName = 'SkillDataTemplateTimelineView';
+	public _type = 'Skill';
 
 }
