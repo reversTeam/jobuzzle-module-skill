@@ -7,7 +7,7 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-29 19:38:45
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-11-21 15:21:10
 **************************************************************/
 
 class SkillDataTemplateTimelineView extends ElementDataTemplateTimelineView {
@@ -20,7 +20,7 @@ class SkillDataTemplateTimelineView extends ElementDataTemplateTimelineView {
 		});
 	}
 
-	public display : function () {
+	public displayContent : function () {
 		var entity = this.state['entity'];
 		return <div onClick={this.link} data-url={this.getUrl()}>
 			{entity.getId() +' : '+ entity.getType() +' | Name -> '+ entity.getName()}

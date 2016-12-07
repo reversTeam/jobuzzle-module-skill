@@ -7,10 +7,15 @@
 #       ## #     # #     # #     #    #       #    # #     #  #
 #       ## #     # #     # #     #   #       #     # ######   # @Last Modified by:   revers
 #  ####### #     # #     # #     #  #       #      # #        #
-#  ######   #####   ######  #####  ####### ####### # #######  # @Last Modified time: 2015-11-16 13:53:41
+#  ######   #####   ######  #####  ####### ####### # #######  # @Last Modified time: 2015-11-21 15:22:29
 ###############################################################
 page:
 	title:
 		Skills: Competences
 		view: '{{url}}'
 		update: '{{url}}'
+
+view:
+	actions:
+		edit: Éditer la compétence
+		delete: Supprimer la compétence

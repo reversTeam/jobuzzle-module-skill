@@ -7,13 +7,12 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-29 17:33:12
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-11-21 14:50:24
 **************************************************************/
 
 class SkillDataDeleteTemplate extends ElementDataDeleteTemplate {
 
 	public _viewClassName = 'SkillDataTemplateDeleteView';
 	public _type = 'Skill';
-	public _route = 'skill';
 
 }

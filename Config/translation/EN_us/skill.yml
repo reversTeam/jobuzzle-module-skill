@@ -7,10 +7,15 @@
 #       ## #     # #     # #     #    #       #    # #     #  #
 #       ## #     # #     # #     #   #       #     # ######   # @Last Modified by:   revers
 #  ####### #     # #     # #     #  #       #      # #        #
-#  ######   #####   ######  #####  ####### ####### # #######  # @Last Modified time: 2015-11-16 13:54:13
+#  ######   #####   ######  #####  ####### ####### # #######  # @Last Modified time: 2015-11-21 15:21:51
 ###############################################################
 page:
 	title:
 		Skills: Skills
 		view: '{{url}}'
 		update: '{{url}}'
+
+view:
+	actions:
+		edit: Edit skill
+		delete: Delete skill
